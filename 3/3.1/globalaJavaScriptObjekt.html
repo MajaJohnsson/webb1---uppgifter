@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>  
+
+
+<head>
+
+    <script src="globalaJavaScriptObjekt.js"></script>
+
+    <!-- <meta name="application-name"> -->
+
+    <meta name="author" content="Maja Johnsson">
+
+    <meta name="description" content="Detta är en sida för hem">
+
+    <meta name="generator" content="">
+    <!-- OPS vet ikke, FIXA-->
+
+    <meta name="keywords" content="HTML, hemsida, SU">
+    <!-- OPS vet inte vilka ord man ska skriva :) -->
+
+    <!--<meta content=""> -->
+
+    <meta charset="utf-8">
+
+<title>Uppgift 3.1.1</title>
+
+</head>
+
+<body onLoad="getDate()">
+
+    <h1><label id="date" ></label></h1>
+
+    <main>
+
+        <p>Skriv ett namn så får du veta om det ingår i top 5 listan 2026 för populäraste namnen</p>
+
+        <label for="nameInput">Skriv ett namn: </label>
+        <input type="text" id="nameInput" name="nameInput">
+        <button type="button" id="nameInput" onclick="checkNameInList()">Skicka</button>
+
+        <br/> 
+
+        <p>Svar: </p>
+
+        <label id="answerNamePopularCheck"></label>
+
+        <br/> 
+
+        <p>Skriv två tal så får du veta vilket av de som är minst!</p>
+
+
+        <label for="firstNumber">Skriv ett tal: </label>
+        <input type="number" id="firstNumber" name="firstNumber">
+        <label for="secondNumber">Skriv ett tal: </label>
+        <input type="number" id="secondNumber" name="secondNumber">
+        <button type="button" id="btnSendNumber" onclick="checkMinMaxNumber()">Skicka</button>
+
+        <br/> 
+
+        <p>Svar: </p>
+
+        <label id="answerNumberCheck"></label> 
+
+        <br/> 
+
+        <p>Skriv ett ord så får du veta hur långt det är!</p>
+
+
+        <label for="wordLength">Skriv ett ord: </label>
+        <input type="text" id="wordLength" name="wordLength">
+        <button type="button" id="btnSendWordLength" onclick="checkWordLength()">Skicka</button>
+
+        <br/> 
+
+        <p>Svar: </p>
+
+        <label id="answerWordLengthCheck"></label>  
+        
+    </main>
+
+</body>
+
+</html>
