@@ -1,0 +1,138 @@
+<!-- beskriver ens framtida aktiviteter och intressen-->
+
+<!doctype html>
+
+<html>  
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css.css?rnd=12345"/>
+
+    <!-- <meta name="application-name"> -->
+
+    <meta name="author" content="Maja Johnsson">
+
+    <meta name="description" content="Detta är en sida för framtiden">
+
+    <meta name="generator" content="">
+    <!-- OPS vet ikke, FIXA-->
+
+    <meta name="keywords" content="HTML, framtiden, SU">
+    <!-- OPS vet inte vilka ord man ska skriva :) -->
+
+    <!--<meta content=""> -->
+
+    <meta charset="utf-8">
+
+<title>Framtid</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Hemsida framtid</h1>
+        <h2>En sida för framtiden</h2>
+    </header>
+
+    <main>
+
+        <section>
+
+            <br>
+            <h3>En liten start på ett fortsatt arbete</h3>
+            <p>Vi får se vad som händer efter examen våren 2027, så för nu kanske det är roligare att få veta lite mer om vem du är som har besökt denna sida. </p>
+
+            <<form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+>
+                <p>Här får du gärna fylla i ett formulär och beskriva lite vem du är</p>
+                <fieldset>
+                    <legend>Kort om dig själv</legend>
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name" placeholder="förnamn" autofocus required pattern="[A-Za-zÅÄÖåäö]+" title="Namnet får endast innehålla bokstäver och måste fyllas i">
+                    <!--REGULÄRA UTTRYCK?-->
+                    <br>
+
+                    <label for="email">Email </label>
+                    <input type="email" id="email" name="email" placeholder="exempel@test.se" required title="Email måste vara ifyllt">
+                    <br>
+
+                    <label for="url">En hemsida du vill att fler ska hitta</label>
+                    <input type="url" id="url" name="url" placeholder="https://www.exempel.com/">
+                    <br>
+
+                    <label for="funfact">Skriv en "fun fact" om dig själv</label>
+                    <br>
+                    <textarea id="funfact" name="funfact" rows="5" cols="60">Absolut ingen press...</textarea>
+
+                    <p>Vilken sida var roligast på hemsidan?</p>
+                    <input type="checkbox" id="page1" name="option1" value="Future">
+                    <label for="page1"> Framtid </label>
+                    <input type="checkbox" id="page2" name="option2" value="Now">
+                    <label for="page2"> Nu </label>
+                    <input type="checkbox" id="page3" name="option3" value="History">
+                    <label for="page3"> Historia </label>
+                    <input type="checkbox" id="page4" name="option3" value="Home">
+                    <label for="page4"> Hem / Startsida </label>
+
+                    <p>Tycker du att detta formulär har varit lätt att fylla i?</p>
+                    <input type="radio" id="opinion1" name="opinion" value="Yes">
+                    <label for="opinion1"> Ja </label>
+                    <input type="radio" id="opinion2" name="opinion" value="No">
+                    <label for="opinion2"> Nej </label>
+                    <input type="radio" id="opinion3" name="opinion" value="Meh">
+                    <label for="opinion3"> Meh </label>
+                    <br>
+
+                    <label for="hobbies">Finns det någon aktivitet som du blev inspirerad att börja</label>
+                    <select name="hobbies" id="hobbies">
+                        <option value="painting">Målning</option>
+                        <option value="reading">Läsning</option>
+                        <option value="puzzle">Pussel</option>
+                        <option value="no">Nej, jag håller mig till de jag har</option>
+                    </select>
+                    <br>
+
+                    <!--DATALIST-->
+
+                    <label for="file">Skicka gärna med en fil till något du har skapat</label>
+                    <input type="file" id="file" name="file">
+                    <br>
+
+                </fieldset>
+
+                <input type="submit">
+            </form>
+            <br>
+        </section>
+
+        <footer>
+            <i>Av Maja Johnsson, dsv :)</i>
+        </footer>
+    
+    </main>
+    
+    <aside>
+
+        <i>Detta är till en kurs i webbutveckling, i tidigt stadie</i>
+
+    </aside>
+
+    <!--POST-->
+
+    <nav>
+
+        <a href="history.html"><pre>Historia</pre></a>
+        <a href="now.html"><pre>Nu</pre></a>
+        <a href="home.html"><pre>Hem</pre></a>
+
+    </nav>
+
+    <footer>
+        <p>Nu har du nått slutet på framtiden, snart kommer fler roliga knappar och bilder</p>
+        <p><a href="mailto:majo9305@student.su.se">majo9305@student.su.se</a></p>
+    </footer>
+
+</body>
+
+</html>

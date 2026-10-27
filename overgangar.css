@@ -1,0 +1,367 @@
+/*AI användes för att förstå hur man laddade ner och använde en egen font, i detta fall från google fonts*/
+
+@font-face {
+    font-family: "nedladdadFont";
+    src: url(Montserrat-Light.ttf) format("truetype");
+}
+
+/*innan länken klickas*/
+a:link {
+    color: black;
+}
+
+/*när länken klickas*/
+a:active {
+    cursor: progress;
+}
+
+/*efter länken klickas*/
+a:visited {
+    color: darkorchid;
+}
+
+/*när musen "hovrar" över länken*/
+a:hover {
+    cursor: pointer;
+    color: darkorchid;
+}
+
+ul {
+    list-style: circle outside;
+}
+
+ol {
+    list-style: lower-roman outside;
+}
+
+table {
+    table-layout: auto;
+    border-spacing: 0.5em;
+    border: 1px solid gray;
+}
+
+img {
+    float: left;
+    margin-right: 1em;
+}
+
+h1, h2, h3 {
+    clear: both;
+}
+
+#videoFullScreen {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(124, 122, 122, 0.363);
+    width: 100%;
+    padding: 7%;
+    color: white;
+}
+
+#knappPinguVideo {
+    background: rgb(218, 186, 218);
+    color: black;
+    width: 10em;
+    padding: 1em;
+}
+
+#knappPinguVideo:hover {
+    background: rgb(105, 105, 105);
+    color: white;
+}
+
+input:focus {
+    background-color: rgb(218, 186, 218);
+}
+
+#funfact {
+    border: 1px solid rgb(66, 51, 51);
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#name {
+    border: 1px solid rgb(152, 89, 165);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#email {
+    border: 1px solid rgb(152, 89, 165);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#url {
+    border: 1px solid rgb(152, 89, 165);
+    border-radius: 5px;
+    padding: 5px;
+    background-image: url("heart.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+
+form {
+    line-height: 2;
+}
+
+div.navHome {
+    transition: all 2s;
+}
+
+div.navHome:hover {
+    background-color: lightgoldenrodyellow;
+    font-size: 1.2em;
+}
+
+
+/*För desktop*/
+body {
+    min-width: 1200px;
+    margin: auto;
+    /*Ändra?*/
+    padding: 1em;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1em;
+
+    font: 16px "nedladdadFont", "Times New Roman";
+    background: rgb(204, 228, 236) fixed center border-box;
+    }
+
+    header {
+        background: rgb(248, 218, 223);
+        min-height: 200px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: large;
+        letter-spacing: 2px;
+
+    }
+    
+    nav {
+        background: whitesmoke;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    main {
+        background: white;
+        letter-spacing: 2px;
+    }
+
+    
+    section {
+        background: white;
+    }
+    
+    aside {
+        background: rgb(248, 218, 223);
+        color: rgb(122, 0, 0);
+        line-height: 2;
+    }
+    
+    footer {
+        background: whitesmoke;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        color:darkgreen;
+    }
+
+
+/*flödande för desktop 1200px-1024px*/
+/*kanske ska lägga till min-width*/
+@media only screen and (max-width:1200px) {
+
+    body {
+        min-width: 1024px;
+        margin: auto;
+        /*Ändra?*/
+        padding: 0.5em;
+    
+        display: grid;
+        /*kan ändra så att det bara är indelat i två kolumner istället för tre*/
+        grid-template-columns: 3fr 2fr;
+        gap: 0.5em;
+
+        }
+
+    
+    header {
+        background: rgb(248, 218, 223);
+        /*ska det vara px?*/
+        min-height: 200px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        letter-spacing: 2px;
+
+    }
+    
+    nav {
+        background: whitesmoke;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    main {
+        background: white;
+        letter-spacing: 2px;
+    }
+    
+    section {
+        background: white;
+    }
+    
+    aside {
+        background: rgb(248, 218, 223);
+        color: rgb(122, 0, 0);
+        line-height: 2;
+    }
+    
+    footer {
+        background: whitesmoke;
+        grid-column: 1;
+        grid-column-end: 3;
+        color:darkgreen;
+    }
+    
+    }
+
+/*För plattor*/
+/*flödande för plattor*/
+@media only screen and (max-width:1024px) {
+
+    body {
+        min-width: 480px;
+        margin: auto;
+        /*Ändra?*/
+        padding: 0.5em;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 0.5em;
+        
+}
+    
+    header {
+        background: rgb(248, 218, 223);
+        /*ska det vara px?*/
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /*max-height: 10%;*/
+        font-size: 1em;
+
+    }
+    
+    nav {
+        background: whitesmoke;
+        font-size: 0.9em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    main {
+        background: white;
+        font-size: 0.9em;
+    }
+    
+    section {
+        background: white;
+        font-size: 0.9em;
+    }
+    
+    aside {
+        background: rgb(248, 218, 223);
+        color: rgb(122, 0, 0);
+        font-size: 0.9em;
+        line-height: 200%;
+    }
+    
+    footer {
+        background: whitesmoke;
+        color:darkgreen;
+        font-size: 0.8em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    }
+
+/*För mobiler*/
+/*flödande för mobiler*/
+@media only screen and (max-width:480px) {
+
+    body {
+        margin: auto;
+        /*Ändra?*/
+        padding: 0.5em;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+}
+    
+    header {
+        background: rgb(248, 218, 223);
+        /*ska det vara px?*/
+        min-height: 100px;
+        /*grid-column-start: 1;*/
+        /*grid-column-end: 1;*/
+        font-size: 0.8em;
+
+    }
+    
+    nav {
+        background: whitesmoke;
+        font-size: 0.8em;
+    }
+    
+    main {
+        background: white;
+        font-size: 0.8em;
+    }
+    
+    section {
+        background: white;
+        font-size: 0.8em;
+    }
+    
+    aside {
+        background: rgb(248, 218, 223);
+        font-size: 0.8em;
+        color: rgb(122, 0, 0);
+        line-height: 150%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    footer {
+        background: whitesmoke;
+        /*grid-column: 1;*/
+        /*grid-column-end: 1;*/
+        font-size: 0.8em;
+        color:darkgreen;
+    }
+    }
+
+/*För mobiler*/
+/*fixerad för mobiler under 100px*/
+@media only screen and (max-width:100px) {
+    body {
+    margin: auto;
+    /*Ändra?*/
+    padding: 0.5em;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+
+    }
+}
