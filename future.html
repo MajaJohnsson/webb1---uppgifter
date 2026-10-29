@@ -31,7 +31,7 @@
 <body>
 
     <header>
-        <h1>Hemsida framtid</h1>
+        <h1>Framtid</h1>
         <h2>En sida för framtiden</h2>
     </header>
 
@@ -43,8 +43,8 @@
             <h3>En liten start på ett fortsatt arbete</h3>
             <p>Vi får se vad som händer efter examen våren 2027, så för nu kanske det är roligare att få veta lite mer om vem du är som har besökt denna sida. </p>
 
-            <<form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
->
+            <form method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+
                 <p>Här får du gärna fylla i ett formulär och beskriva lite vem du är</p>
                 <fieldset>
                     <legend>Kort om dig själv</legend>
@@ -84,7 +84,7 @@
                     <label for="opinion3"> Meh </label>
                     <br>
 
-                    <label for="hobbies">Finns det någon aktivitet som du blev inspirerad att börja</label>
+                    <label for="hobbies">Finns det någon aktivitet som du blev inspirerad att börja?</label>
                     <select name="hobbies" id="hobbies">
                         <option value="painting">Målning</option>
                         <option value="reading">Läsning</option>
@@ -93,7 +93,16 @@
                     </select>
                     <br>
 
-                    <!--DATALIST-->
+                    <label for="favoriteElement">Vad var ditt favoritinslag?</label> <br>
+                    <input list="favoriteElements" name="favoriteElement" id="favoriteElement">
+
+                    <datalist id="favoriteElements">
+                        <option value="Pingu">
+                        <option value="Bilder">
+                        <option value="Forumlär">
+                    </datalist>
+
+                    <br>
 
                     <label for="file">Skicka gärna med en fil till något du har skapat</label>
                     <input type="file" id="file" name="file">
@@ -114,11 +123,9 @@
     
     <aside>
 
-        <i>Detta är till en kurs i webbutveckling, i tidigt stadie</i>
+        <i>Ett formulär kan vara ett snabbt och smidigt sätt att samla in information. </i>
 
     </aside>
-
-    <!--POST-->
 
     <nav>
 
